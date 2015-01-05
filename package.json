@@ -1,0 +1,20 @@
+{
+    "author": "Spencer Kelly <spencermountain@gmail.com> (http://spencermounta.in)",
+    "name": "wikidata-to-freebase",
+    "description": "compare wikidata and freebase data",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/spencermountain/wikidata-freebase.git"
+    },
+    "main": "index.js",
+    "engines": [
+        "node = 0.10.33"
+    ],
+    "dependencies": {
+        "async": "*",
+        "freebase":"*",
+        "request":"*",
+        "dirtyjs":"*"
+    }
+}

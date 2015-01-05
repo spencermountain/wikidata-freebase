@@ -27,5 +27,8 @@ var fb_mapped=function(q,callback){
   })
 }
 
-module.exports=fb_mapped
+module.exports={
+  query:fb_mapped,
+  mappings:mappings
+}
 // fb_mapped("toronto", console.log)

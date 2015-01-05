@@ -17,7 +17,7 @@ and wikidata says:
 ronald reagan - P27 - america
 ````
 
-running this comparison over a lot of topics, we can statistically unite 'P27' and '/people/person/nationality' over every property in both projects.
+running this comparison over a lot of topics, we can statistically unite 'P27' and '/people/person/nationality' over every property in both projects, without having to do it manually.
 
 
 see [a list of all relevant freebase properties](https://docs.google.com/spreadsheets/d/1USoyyvgouOK8t7PjtP_yveVbKM2WZI64lhtvhG0oj3Y/edit#gid=0)
@@ -34,5 +34,5 @@ npm install
 ````
 
 ````bash
-node ./compare Toronto
+node ./compare_all.js
 ````
