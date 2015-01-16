@@ -12,7 +12,7 @@ var wikidata=function(qid, callback){
       // console.log(body)
       return callback({})
     }
-    var claims=data.entities[qid].claims || {}
+    var claims=(data.entities[qid]||{}).claims || {}
     var all= {}
     Object.keys(claims).forEach(function(k){
       claims[k].forEach(function(s){

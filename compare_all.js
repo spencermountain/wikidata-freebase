@@ -1,16 +1,23 @@
 //learn property matches over a large number of topics
-var topics= require("./popular_topics").data//.slice(0,15)
+var topics= require("./popular_topics").data
 var compare_one= require("./compare_one")
 var async=require("async")
 require("dirtyjs")
 
 var compare_all=function(){
   var doit=function(t,cb){
+    console.log(t)
     compare_one(t, function(r){
       return cb(null, r)
     })
   }
   async.mapLimit(topics, 2, doit, function(err, list){
+    console.log(list)
+    console.log("---")
+    console.log("---")
+    console.log("---")
+    console.log("---")
+    console.log("---")
     var all={}
     list.forEach(function(o){
       Object.keys(o.property_matches).forEach(function(k){
